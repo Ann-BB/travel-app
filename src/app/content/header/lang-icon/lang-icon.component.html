@@ -1,1 +1,9 @@
-<p>lang-icon works!</p>
+<div class="language-selection">
+    <button class="language-select-btn form-control" (click)="toggleLanguageOptions()">
+        {{currentLanguage}}
+    </button>
+    <div class="language-options" *ngIf="languageOptionsVisible">
+        <div class="language-option" (click)="selectLanguage('ka', 'Geo')" data-value="ka">Geo</div>
+        <div class="language-option" (click)="selectLanguage('en', 'En')" data-value="en">En</div> 
+    </div>
+</div>

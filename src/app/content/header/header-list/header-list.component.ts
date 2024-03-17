@@ -10,11 +10,14 @@ import { HedaerList } from '../../../models/hedaer-list';
 })
 export class HeaderListComponent {
 
-  // headerList: HedaerList[] = [
-  //   {
-  //     "title": "place",
-  //     "section": ["kakheti", "tbilis"]
-  //   }
-  // ]
-  headerList: string[] =[]
+  headerList: HedaerList[] = [
+    {
+      title: "why",
+      section: {
+        listName: ["Header 1", "Header 2"],
+        imgList: ["Header 3", "Header 4"]
+      }
+    }
+  ]
+  // headerList: string[] =[]
 }

@@ -1,6 +1,6 @@
 export interface HedaerList {
   title: string;
-  section: string[] | ISection;
+  section: ISections | ISection;
 }
 
 export interface ISections {
